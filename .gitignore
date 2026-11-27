@@ -12,3 +12,6 @@ replit.nix
 .quartz/
 quartz/cli/tui/dist/
 .turbo/
+
+# Temporarily unpublished study chapters (kept locally).
+/content/0[2-4]-*/
