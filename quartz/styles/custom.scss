@@ -1,3 +1,25 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+body[data-slug="index"] #quartz-body {
+  > .sidebar.right,
+  > .center > hr {
+    display: none;
+  }
+
+  @media all and ($desktop) {
+    > .center {
+      grid-column: 2 / -1;
+      padding-right: 2rem;
+      box-sizing: border-box;
+    }
+  }
+
+  .graph > .graph-outer {
+    height: clamp(24rem, 72svh, 54rem);
+  }
+
+  // Keep the chapter links available if the graph cannot render.
+  .center:has(.graph-container canvas) > article {
+    display: none;
+  }
+}

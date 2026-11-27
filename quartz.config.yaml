@@ -151,6 +151,7 @@ plugins:
   - source: "@quartz-community/graph"
     enabled: true
     layout:
+      condition: not-index
       position: right
       priority: 10
   - source: "@quartz-community/search"
@@ -169,11 +170,13 @@ plugins:
   - source: "@quartz-community/article-title"
     enabled: true
     layout:
+      condition: not-index
       position: beforeBody
       priority: 10
   - source: "@quartz-community/content-meta"
     enabled: true
     layout:
+      condition: not-index
       position: beforeBody
       priority: 20
   - source: "@quartz-community/tag-list"
